@@ -1,0 +1,4 @@
+#!/bin/sh -x
+sed -e 's/$/\r/' < netmaps.imp | imp2ld /dev/stdin -4 -o netmaps
+chmod go+r netmaps.dat netmaps.idx
+exit 0
